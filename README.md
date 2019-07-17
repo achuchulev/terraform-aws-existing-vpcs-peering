@@ -30,8 +30,8 @@ cd terraform-aws-existing-vpcs-peering
 | requester_vpc_id  | Requester VPC id | string | - | yes
 | accepter_vpc_id | Accepter VPC id | string | - | yes
 | activate_peering | Prevent the module from creating or accessing any resources | string  | `true` | no
-| requester_peer_tags | Set a VPC tags `Name` | map  | <map> | no
-| accepter_peer_tags | Set a VPC tags `Name`  | map  | <map> | no
+| requester_peer_tags | Set a VPC tags `Name` | map  | `<map>` | no
+| accepter_peer_tags | Set a VPC tags `Name`  | map  | `<map>` | no
 
 
 ### Initialize terraform and plan/apply
