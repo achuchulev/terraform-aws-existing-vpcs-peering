@@ -21,11 +21,10 @@ variable "requester_vpc_id" {
   default     = ""
 }
 
-variable "requester_vpc_tags" {
-  type        = "map"
-  description = "Requester VPC tags"
-
-  default = {}
+variable "accepter_vpc_id" {
+  type        = "string"
+  description = "Acceptor VPC ID"
+  default     = ""
 }
 
 variable "requester_peer_tags" {
@@ -46,17 +45,4 @@ variable "accepter_peer_tags" {
     Side = "Accepter"
     Name = "VPC01-VPC02"
   }
-}
-
-variable "accepter_vpc_id" {
-  type        = "string"
-  description = "Acceptor VPC ID"
-  default     = ""
-}
-
-variable "accepter_vpc_tags" {
-  type        = "map"
-  description = "Accepter VPC tags"
-
-  default = {}
 }
