@@ -1,14 +1,20 @@
-variable "requester_aws_access_key" {}
+variable "requester_aws_access_key" {
+}
 
-variable "requester_aws_secret_key" {}
+variable "requester_aws_secret_key" {
+}
 
-variable "requester_region" {}
+variable "requester_region" {
+}
 
-variable "accepter_aws_access_key" {}
+variable "accepter_aws_access_key" {
+}
 
-variable "accepter_aws_secret_key" {}
+variable "accepter_aws_secret_key" {
+}
 
-variable "accepter_region" {}
+variable "accepter_region" {
+}
 
 variable "enabled" {
   description = "Set to false to prevent the module from creating or accessing any resources"
@@ -16,17 +22,17 @@ variable "enabled" {
 }
 
 variable "requester_vpc_id" {
-  type        = "string"
+  type        = string
   description = "Requester VPC ID"
 }
 
 variable "accepter_vpc_id" {
-  type        = "string"
+  type        = string
   description = "Acceptor VPC ID"
 }
 
 variable "requester_peer_tags" {
-  type        = "map"
+  type        = map(string)
   description = "Requester peer tags"
 
   default = {
@@ -36,7 +42,7 @@ variable "requester_peer_tags" {
 }
 
 variable "accepter_peer_tags" {
-  type        = "map"
+  type        = map(string)
   description = "Requester peer tags"
 
   default = {
@@ -44,3 +50,4 @@ variable "accepter_peer_tags" {
     Name = "VPC01-VPC02"
   }
 }
+
