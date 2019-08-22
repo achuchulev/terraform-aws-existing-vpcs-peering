@@ -18,13 +18,11 @@ variable "enabled" {
 variable "requester_vpc_id" {
   type        = "string"
   description = "Requester VPC ID"
-  default     = ""
 }
 
 variable "accepter_vpc_id" {
   type        = "string"
   description = "Acceptor VPC ID"
-  default     = ""
 }
 
 variable "requester_peer_tags" {
